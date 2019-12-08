@@ -110,8 +110,8 @@ async function trainModel(model, inputs, labels) {
     metrics: ['mse'],
   });
   
-  const batchSize = 16;
-  const epochs = 25;
+  const batchSize = 50;
+  const epochs = 100;
   
   return await model.fit(inputs, labels, {
     batchSize,
